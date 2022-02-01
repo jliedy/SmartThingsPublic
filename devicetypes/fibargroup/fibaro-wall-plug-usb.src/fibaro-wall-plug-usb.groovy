@@ -2,7 +2,7 @@
  *	Fibaro Wall Plug US child
  */
 metadata {
-	definition (name: "Fibaro Wall Plug USB", namespace: "FibarGroup", author: "Fibar Group") {
+	definition (name: "Fibaro Wall Plug USB", namespace: "FibarGroup", author: "Fibar Group", ocfDeviceType: "oic.d.smartplug") {
 		capability "Energy Meter"
 		capability "Power Meter"
 		capability "Configuration"
@@ -46,9 +46,17 @@ def installed() {
 
 
 def reset() {
+	resetEnergyMeter()
+}
+
+def resetEnergyMeter() {
 	parent.childReset()
 }
 
 def refresh() {
+	parent.childRefresh()
+}
+
+def ping() {
 	parent.childRefresh()
 }
