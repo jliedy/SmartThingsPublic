@@ -32,6 +32,9 @@ metadata {
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006", outClusters: "0000", manufacturer: "eWeLink", model: "SA-003-Zigbee", deviceJoinName: "eWeLink Outlet", ocfDeviceType: "oic.d.smartplug" //eWeLink SmartPlug (SA-003)
 		fingerprint profileId: "0104", inClusters: "0000,0003,0004,00005,0006", outClusters: "0000", manufacturer: "eWeLink", model: "ZB-SW01", deviceJoinName: "eWeLink Switch"
 		
+		// Minoston
+		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006", outClusters: "0000", manufacturer: "Minoston", model: "ZB36S", deviceJoinName: "Minoston Outlet", ocfDeviceType: "oic.d.smartplug" //Minoston SmartPlug
+		
 		// LELLKI
 		fingerprint profileId: "0104", inClusters: "0000,0003,0004,00005,0006", outClusters: "0000", manufacturer: "LELLKI", model: "JZ-ZB-001", deviceJoinName: "LELLKI Switch"
 		
@@ -78,7 +81,8 @@ metadata {
 		fingerprint manufacturer: "Leviton", model: "DG15A", deviceJoinName: "Leviton Outlet", ocfDeviceType: "oic.d.smartplug" //Leviton Zigbee Plug-In Switch DG15A, Raw Description: 01 0104 010A 00 06 0000 0003 0004 0005 0006 0B05 01 0019
 
 		// NodOn
-		fingerprint profileId: "0104", deviceId: "0002", inClusters: "0000, 0003, 0004, 0005, 0006, 0019", outClusters: "0019", manufacturer: "NodOn", model: "SIN-4-1-20", deviceJoinName: "NodOn Switch"
+		fingerprint profileId: "0104", deviceId: "0002", inClusters: "0000, 0003, 0004, 0005, 0006, 0007, 1000, FC57", outClusters: "0019", manufacturer: "NodOn", model: "SIN-4-1-20", deviceJoinName: "NodOn Switch"
+		fingerprint profileId: "0104", deviceId: "0002", inClusters: "0000, 0003, 0004, 0005, 0006, 0007, 1000, FC57", outClusters: "0019", manufacturer: "NodOn", model: "SIN-4-1-20_PRO", deviceJoinName: "NodOn Switch"
         
 		// Orvibo
 		fingerprint profileId: "0104", inClusters: "0000, 0005, 0004, 0006", outClusters: "0000", manufacturer: "ORVIBO", model: "095db3379e414477ba6c2f7e0c6aa026", deviceJoinName: "Orvibo Switch" //Orvibo Smart Switch
@@ -101,6 +105,7 @@ metadata {
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006", outClusters: "1000", manufacturer: "SONOFF", model: "01MINIZB", deviceJoinName: "SONOFF 01MINIZB" //01MINIZB
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, FC57", outClusters: "0019", manufacturer: "SONOFF", model: "S26R2ZB", deviceJoinName: "SONOFF Plug", ocfDeviceType: "oic.d.smartplug" //SONOFF S26R2 Plug
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, FC57", outClusters: "0019", manufacturer: "SONOFF", model: "S40LITE", deviceJoinName: "SONOFF Plug", ocfDeviceType: "oic.d.smartplug" //SONOFF S40Lite Plug
+		fingerprint profileId: "0104", inClusters: "0000, 0003, 0004, 0005, 0006, 0020, FC57", outClusters: "0019", manufacturer: "SONOFF", model: "ZBMINI-L", deviceJoinName: "SONOFF Switch" //SONOFF ZBMINI-L
 
 		// Terncy
 		fingerprint profileId: "0104", inClusters: "0000, 0003, 0006", outClusters: "0019", manufacturer: "", model: "TERNCY-LS01", deviceJoinName: "Terncy Switch" //Terncy Smart Light Socket
