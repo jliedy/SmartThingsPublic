@@ -157,6 +157,9 @@ def getBatteryPercentageResult(rawValue) {
 		def minVolts = 2.1
 		def maxVolts = 3.0
 		def pct = (volts - minVolts) / (maxVolts - minVolts)
+		if(pct <= 0) {
+			pct = 0.01
+		}
 		result.value = Math.min(100, (int)(pct * 100))
 		def linkText = getLinkText(device)
 		result.descriptionText = "${linkText} battery was ${result.value}%"
@@ -183,6 +186,8 @@ def configure() {
 	if (isHeimanButton())
 		cmds += zigbee.writeAttribute(0x0000, 0x0012, DataType.BOOLEAN, 0x01) +
 		addHubToGroup(0x000F) + addHubToGroup(0x0010) + addHubToGroup(0x0011) + addHubToGroup(0x0012)
+	if (isShinaButton())
+		cmds += addHubToGroup(0x0000)
 	return cmds
 }
 
